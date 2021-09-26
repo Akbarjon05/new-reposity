@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rica</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <style>
+    .header-end {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: repeat(5, 2fr);
+      /* padding: 0 5%; */
+    }
+
+    .header-end>.textBox {
+      line-height: 3;
+      border-left: 1px solid var(--gray);
+      padding: 0 5%;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.36);
+      text-transform: uppercase;
+    }
+
+    .content .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-color: var(--gray);
+    }
+  </style>
+</head>
+
+<body>
+  <nav style="background-color: grey; color:goldenrod;" class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://bulma.io">
+        <img src="Hotel/Hotel/Image/footer-logo.png" width="112" height="28">
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">
+        HOME
+      </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Hotel demo
+        </a>
+        <a class="navbar-item">
+          Tour demo
+        </a>
+        <a class="navbar-item">
+          Flight demo
+        </a>
+        <hr class="navbar-divider">
+        <a class="navbar-item">
+          Cab demo
+        </a>
+      </div>
+    </div>
+    </div>
+
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">
+        HOTEL
+      </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Listing
+        </a>
+        <a class="navbar-item">
+          Single Page
+        </a>
+        <a class="navbar-item">
+          Booking
+        </a>
+      </div>
+    </div>
+    </div>
+
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">
+        TOUR
+      </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Listing
+        </a>
+        <a class="navbar-item">
+          Single Page
+        </a>
+        <a class="navbar-item">
+          Booking
+        </a>
+      </div>
+    </div>
+    </div>
+
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">
+        FLIGHT
+      </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Listing
+        </a>
+        <a class="navbar-item">
+          Booking
+        </a>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">
+        CAB
+      </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Listing
+        </a>
+        <a class="navbar-item">
+          Booking
+        </a>
+        <a class="navbar-item">
+          Single detailing
+        </a>
+      </div>
+    </div>
+    </div>
+
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link">
+        RESTAURANT
+      </a>
+
+      <div class="navbar-dropdown">
+        <a class="navbar-item">
+          Listing
+        </a>
+        <a class="navbar-item">
+          Single Page
+        </a>
+        <a class="navbar-item">
+          Booking
+        </a>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+
+
+  <div class="card">
+    <div class="card-image">
+      <figure class="image is-640x480">
+        <img src="Hotel/Hotel/Image/10.jpg" alt="Placeholder image">
+      </figure>
+    </div>
+  </div>
+
+
+  <div class="header-end">
+    <div class="textBox">
+      <p>HOTEL</p>
+      <select>
+        <option value="" class="one">Uzbekistan</option>
+        <option value="">U.S.A</option>
+        <option value="">Germaniya</option>
+        <option value="">Angliya</option>
+      </select>
+    </div>
+    <div class="textBox">
+      <p>CHECK IN</p>
+      <input type="date" placeholder="07/07/2007" />
+    </div>
+    <div class="textBox">
+      <p>CHECK OUT</p>
+      <input type="date" value="07/07/2007" />
+    </div>
+    <div class="textBox">
+      <p>GUESTS</p>
+      <input type="number" value="1" min="1" />
+    </div>
+    <div class="textBox">
+      <a href="#">Search</a>
+    </div>
+  </div>
+
+  <section class="hero" id="rooms">
+    <div class="hero-body">
+      <div class="container">
+        <div class="rooms columns">
+          <div class="column">
+            <figure class="image">
+              <img src="Hotel/Hotel/Image/2.jpg" alt="Hotel">
+            </figure>
+            <div class="content">
+              <div></div>
+              <h1 class="title is-6">The Venetian</h1>
+              <p>The Executive Gold Single Rooms can hold 2 guests (with extra bed €50)</p>
+              <a class="button is-primary open-modal" href="#">view details 1245$/ a weak</a>
+            </div>
+          </div>
+
+          <div class="column">
+            <figure class="image">
+              <img src="Hotel/Hotel/Image/3.jpg" alt="Hotel">
+            </figure>
+            <div class="content">
+              <div></div>
+              <h1 class="title is-6">The Venetian</h1>
+              <p>The Executive Gold Single Rooms can hold 2 guests (with extra bed €50)</p>
+              <a class="button is-primary open-modal" href="#">view details 1245$/ a weak</a>
+            </div>
+          </div>
+
+          <div class="column">
+            <figure class="image">
+              <img src="Hotel/Hotel/Image/4.jpg" alt="Hotel">
+            </figure>
+            <div class="content">
+              <div></div>
+              <h1 class="title is-6">The Venetian</h1>
+              <p>The Executive Gold Single Rooms can hold 2 guests (with extra bed €50)</p>
+              <a class="button is-primary open-modal" href="#">view details 1245$/ a weak</a>
+            </div>
+          </div>
+
+          <div class="column">
+            <figure class="image">
+              <img src="Hotel/Hotel/Image/5.jpg" alt="Hotel">
+            </figure>
+            <div class="content">
+              <div></div>
+              <h1 class="title is-6">The Venetian</h1>
+              <p>The Executive Gold Single Rooms can hold 2 guests (with extra bed €50)</p>
+              <a class="button is-primary open-modal" href="#">view details 1245$/ a weak</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="hero" id="rooms">
+    <div class="hero-body">
+      <div class="container">
+        <div class="rooms columns">
+          <div class="column">
+            <figure class="image">
+              <img src="Hotel/Hotel/Image/pexels-quark-studio-2507007.jpg" alt="Hotel">
+            </figure>
+            <div class="content">
+              <div></div>
+              <h1 class="title is-6">The Venetian</h1>
+              <p>The Executive Gold Single Rooms can hold 2 guests (with extra bed €50)</p>
+              <a class="button is-primary open-modal" href="#">view details 1245$/ a weak</a>
+            </div>
+          </div>
+
+          <div class="column">
+            <figure class="image">
+              <img src="Hotel/Hotel/Image/pexels-pixabay-261102.jpg" alt="Hotel">
+            </figure>
+            <div class="content">
+              <div></div>
+              <h1 class="title is-6">The Venetian</h1>
+              <p>The Executive Gold Single Rooms can hold 2 guests (with extra bed €50)</p>
+              <a class="button is-primary open-modal" href="#">view details 1245$/ a weak</a>
+            </div>
+          </div>
+
+          <div class="column">
+            <figure class="image">
+              <img src="Hotel/Hotel/Image/pexels-max-vakhtbovych-6284232.jpg" alt="Hotel">
+            </figure>
+            <div class="content">
+              <div></div>
+              <h1 class="title is-6">The Venetian</h1>
+              <p>The Executive Gold Single Rooms can hold 2 guests (with extra bed €50)</p>
+              <a class="button is-primary open-modal" href="#">view details 1245$/ a weak</a>
+            </div>
+          </div>
+
+          <div class="column">
+            <figure class="image">
+              <img src="Hotel/Hotel/Image/pexels-rachel-claire-6127017.jpg" alt="Hotel">
+            </figure>
+            <div class="content">
+              <div></div>
+              <h1 class="title is-6">The Venetian</h1>
+              <p>The Executive Gold Single Rooms can hold 2 guests (with extra bed €50)</p>
+              <a class="button is-primary open-modal" href="#">view details 1245$/ a weak</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <section class="hero" id="hotel-gallery">
+    <div class="hero-body is-paddingless">
+      <div class="container is-clipped">
+        <div class="content">
+          <h4 class="main_title title is-4">Hotel Gallery</h4>
+        </div>
+        <section class="section is-paddingless">
+          <div id="slider">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img src="Hotel/Hotel/Image/6.jpg" alt="" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 1
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img src="Hotel/Hotel/Image/7.jpg" alt="" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 2
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img src="Hotel/Hotel/Image/8.jpg" alt="" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 3
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img src="Hotel/Hotel/Image/9.jpg" alt="" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 4
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-16by9 is-covered">
+                  <img src="Hotel/Hotel/Image/01.jpg" alt="" />
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 5
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero" id="about-us">
+    <div class="hero-body">
+      <div class="container">
+        <div class="content">
+          <h4 class="main_title title is-4">Akbarjon Hotel</h4>
+        </div>
+        <div class="columns content">
+          <div class="column">
+            <p>
+              With unmatched hospitality, convenience &amp; comforts, Bulma Hotel is an ideal choice for your stay.
+              Whether business trip or just a weekend leisure, we make an effort to bestow the finest services, that
+              will make your stay memorable.
+            </p>
+            <div class="reception">
+              <h5 class="main_title title is-5">Reception</h5>
+              <div class="reception-item">
+                <div>
+                  <div>
+                    <i class="fa fa-phone"></i>
+                    <span>Phone Number</span>
+                  </div>
+                  <a href="tel:+998908542606">+998908542606</a>
+                </div>
+                <a href="tel:+998908542606" class="button mobile-only">
+                  <span>Call</span>
+                </a>
+              </div>
+              <div class="reception-item">
+                <div>
+                  <div>
+                    <i class="fa fa-phone"></i>
+                    <span>Reservation</span>
+                  </div>
+                  <a href="tel:+998950328183">+998950328183</a>
+                </div>
+                <a href="tel:+998950328183" class="button mobile-only">
+                  <span>Call</span>
+                </a>
+              </div>
+              <div class="reception-item">
+                <div>
+                  <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>Email</span>
+                  </div>
+                  <a href="akbarjonfozilov7@gmail.com">akbarjonfozilov7@gmail.com</a>
+                </div>
+                <a href="akbarjonfozilov7@gmail.com" class="button mobile-only">
+                  <span>Mail</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Reception Image -->
+          <div class="column reception-image">
+            <img
+              src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80"
+              alt="Bulma Hotels" />
+          </div>
+        </div>
+        <div class="content">
+          <h5 class="main_title title is-5">Location</h5>
+          <p>
+            Akbarjon Hotel is a business hotel with 45 air conditioned luxury rooms. The hotel is conveniently located
+            in
+            close proximity to Athens, Greece.
+          </p>
+          <ul>
+            <li>3 kms from Kifisia bus station and railway station.</li>
+            <li>25 kms from Athens International Airport.</li>
+            <li>Less than 2 km from nearest shopping malls (The Mall Athens, &amp; Icon Mall).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero" id="contact-us">
+    <div class="hero-body">
+      <div class="container">
+        <div>
+          <div class="content">
+            <h4 class="title is-4"> Contact-us</h4>
+          </div>
+          <h6 class="subtitle is-6">If you have any queries feel free to contact-us</h6>
+          <div class="columns box">
+            <form class="column" action="#">
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Your Name" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Your email" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Phone number</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Phone number" required>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label">Message</label>
+                <div class="control">
+                  <textarea class="textarea" type="text" placeholder="Type your message here ..." required></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label"></label>
+                <div class="control">
+                  <input class="button is-primary" type="submit" required>
+                </div>
+              </div>
+            </form>
+
+
+
+            <div class="column">
+              <iframe width="100%" height="100%" frameborder="0" style="border:0;"
+                src="https://www.google.com/maps/place/Tashkent,+Uzbekistan/@43.1556048,64.6051134,5.71z/data=!4m5!3m4!1s0x38ae8b0cc379e9c3:0xa5a9323b4aa5cb98!8m2!3d41.299476!4d69.2399597?authuser=1">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-4">
+            <div class="content">
+              <h6 class="footer_title title is-6">NEWSLETTER</h6>
+              <p>We love to share new offers and exclusive promotions</p>
+              <div class="newsletter">
+                <form action="#" method="POST" class="newsletter-form">
+                  <input type="email" name="email" placeholder="Enter your email address" />
+                  <button>
+                    <i class="fa fa-paper-plane">
+                      >
+                    </i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4" style="text-align: center;">
+            <div class="content">
+              <div>
+                <h6 class="footer_title title is-6">SOCIAL MEDIA</h6>
+                <p>Follow the Akbarjon Hotels on social media</p>
+                <a class="button is-medium is-facebook">
+                  <span class="icon">
+                    <i class="fab fa-facebook-f fa-lg">
+                      <img src="Hotel/Hotel/Image/th.jpg" alt="">
+                    </i>
+                  </span>
+                </a>
+                <a class="button is-medium is-foursquare">
+                  <span class="icon">
+                    <i class="fab fa-instagram fa-lg">
+                      <img src="Hotel/Hotel/Image/5436.jpg" alt="">
+                    </i>
+                  </span>
+                </a>
+                <a class="button is-medium is-twitter">
+                  <span class="icon">
+                    <i class="fab fa-twitter fa-lg">
+                      <img src="Hotel/Hotel/Image/12.jpg" alt="">
+                    </i>
+                  </span>
+                </a>
+                <a class="button is-medium is-linkedin">
+                  <span class="icon">
+                    <i class="fab fa-linkedin-in fa-lg">
+                      <img src="Hotel/Hotel/Image/download.png" alt="">
+                    </i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="content">
+              <h6 class="footer_title title is-6">ADDRESS</h6>
+              <p class="is-marginless">Reach the destinaiton safely</p>
+              <p class="is-marginless">Street 33, Vilage Qushqonoq, City Yaypan</p>
+              <div>
+                <i class="fa fa-phone"></i> &nbsp; <span>Phone Number</span> &nbsp;
+                <a href="tel:+998908542606">+998908542606</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-foot">
+      <div class="container has-text-centered">
+        <p class="footer-text">
+          &copy; 2021 - Akbarjon Hotel. All rights reserved. <br />
+          <a href="https://www.aldiduzha.com?utm_source=Github" style="color: white;">Designed with <i
+              class="fa fa-heart fa-fw" style="font-size: 10px; color: red;"></i> by Akbarjon Fozilov</a>
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+</body>
+
+</html>
